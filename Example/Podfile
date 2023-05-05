@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MSGXMPPFramework_Tests' do
+  pod 'MSGXMPPFramework', :path => '../'
+  
+  
+end

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 vms.me. All rights reserved.
 //
 
-#import "XMPPMessage.h"
+#import <XMPPFramework/XMPPFramework.h>
 
 @interface XMPPMessage (XEP0313)
 

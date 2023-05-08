@@ -6,7 +6,7 @@
 //
 //
 
-#import "XMPPMessage.h"
+#import <XMPPFramework/XMPPFramework.h>
 
 @interface XMPPMessage (VMSXEP_ChatStateExtended)
 

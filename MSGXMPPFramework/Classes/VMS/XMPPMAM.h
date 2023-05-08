@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 vms.me. All rights reserved.
 //
 
-#import "XMPPModule.h"
+#import <XMPPFramework/XMPPFramework.h>
 
 @class XMPPMessage;
 @class XMPPIDTracker;

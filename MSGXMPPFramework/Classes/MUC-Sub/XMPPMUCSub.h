@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <XMPPFramework/XMPPFramework.h>
-#import "XMPPModule.h"
 
 #ifndef MUCSub_h
 #define MUCSub_h

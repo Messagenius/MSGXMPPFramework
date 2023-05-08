@@ -36,7 +36,21 @@ TODO: Add long description of the pod here.
   #   'MSGXMPPFramework' => ['MSGXMPPFramework/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'MSGXMPPFramework/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'XMPPFramework/Swift'
+  
+  s.libraries = 'xml2', 'resolv'
+  s.frameworks = 'CoreData', 'SystemConfiguration', 'CoreLocation', 'AVFoundation'
+  s.xcconfig = {
+    'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv'
+  }
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'CocoaAsyncSocket', '~> 7.6'
+  s.dependency 'KissXML', '~> 5.2'
+  s.dependency 'libidn', '~> 1.35'
+  s.dependency 'CocoaLumberjack/Swift'
+
+  #s.dependency 'MSGXMPPFramework'
+  
 end

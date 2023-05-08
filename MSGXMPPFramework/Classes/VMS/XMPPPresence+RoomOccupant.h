@@ -6,7 +6,7 @@
 //
 //
 
-#import "XMPPPresence.h"
+#import <XMPPFramework/XMPPFramework.h>
 
 @interface XMPPPresence (RoomOccupant)
 

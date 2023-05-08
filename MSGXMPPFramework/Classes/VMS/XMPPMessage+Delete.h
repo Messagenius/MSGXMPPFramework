@@ -6,7 +6,7 @@
 //  Copyright © 2017 vms.me. All rights reserved.
 //
 
-#import "XMPPMessage.h"
+#import <XMPPFramework/XMPPFramework.h>
 
 @interface XMPPMessage (Delete)
 

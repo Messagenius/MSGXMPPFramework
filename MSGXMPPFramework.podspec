@@ -21,12 +21,13 @@ Pod::Spec.new do |s|
 Forked version of XMPPFramework to be used in Messagenius.
                        DESC
 
-  s.homepage         = 'https://github.com/Messagenius/MSGXMPPFramework'
+  s.homepage         = 'https://github.com/Messagenius/MSGXMPPFramework.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Francesco Cosentino' => 'francesco@messagenius.com' }
-  s.source           = { :git => 'https://github.com/Messagenius/MSGXMPPFramework', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Messagenius/MSGXMPPFramework.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
+  s.swift_versions        = '5.9'
 
   s.source_files = 'MSGXMPPFramework/Classes/**/*.{h,m,swift}'
   
@@ -36,7 +37,7 @@ Forked version of XMPPFramework to be used in Messagenius.
 
   s.public_header_files = 'MSGXMPPFramework/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'XMPPFramework/Swift'
+  s.dependency 'XMPPFramework/Swift', '1.0.0'
   
   s.libraries = 'xml2', 'resolv'
   s.frameworks = 'CoreData', 'SystemConfiguration', 'CoreLocation', 'AVFoundation'
@@ -44,11 +45,9 @@ Forked version of XMPPFramework to be used in Messagenius.
     'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv'
   }
   s.dependency 'CocoaLumberjack'
-  s.dependency 'CocoaAsyncSocket', '~> 7.6'
-  s.dependency 'KissXML', '~> 5.2'
-  s.dependency 'libidn', '~> 1.35'
+  s.dependency 'CocoaAsyncSocket', '~> 7.6.5.1'
+  s.dependency 'KissXML', '~> 5.3.2.1'
+  s.dependency 'libidn', '~> 1.35.1'
   s.dependency 'CocoaLumberjack/Swift'
-
-  #s.dependency 'MSGXMPPFramework'
   
 end
